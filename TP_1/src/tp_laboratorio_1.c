@@ -1,7 +1,7 @@
 /*
 Damian Wolf
 Tp 1
-Div K PRUEBA
+Div K
 */
 
 #include <stdio.h>
@@ -70,7 +70,7 @@ int main(void)
 			precioUnitarioAerolineas= dividir(precioAerolineas, kilometros);	//Llamado a la funcion dividir para calcular el precio unitario
 
 			//Calculos aritmeticos de Latam
-			tarjetaDeDebitoLatam= multiplicar(precioLatam,0.90);				//Llamado a la funcion multiplicar para calcular el 10% de descuento
+			tarjetaDeDebitoLatam= multiplicar(precioLatam, 0.90);				//Llamado a la funcion multiplicar para calcular el 10% de descuento
 			tarjetaDeCreditoLatam= multiplicar(precioLatam,1.25);				//Llamado a la funcion multiplicar para calcular el 25% de aumento
 			bitcoinLatam= dividir(precioLatam, valorBitcoin);					//Llamado a la funcion dividir para calcular el pasaje a bitcoins
 			precioUnitarioLatam= dividir(precioLatam, kilometros);				//Llamado a la funcion dividir para calcular el precio unitario
@@ -104,6 +104,7 @@ int main(void)
 
 				banderaCalculos=0;
 				banderaPrecios=0;
+				banderaKilometros=0;
 			}
 			else
 			{
